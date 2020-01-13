@@ -1,0 +1,12 @@
+# tasks/main.yml
+# Install and configure posgresql server
+
+- include_role:
+    name: ANXS.postgresql
+
+- name: Enable postgresql service
+  service:
+    name: postgresql-{{ postgresql_version }}
+    enabled: True
+    state: started
+
