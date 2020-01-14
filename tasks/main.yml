@@ -1,5 +1,5 @@
 # tasks/main.yml
-# Install and configure posgresql server
+# Configure posgresql server
 
 - name: Enable postgresql service
   service:
